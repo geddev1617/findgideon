@@ -1,0 +1,20 @@
+.footer_link {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  padding: 1em 0;
+}
+
+.footer-list {
+  padding: 1em 0;
+}
+
+.footer-list_item {
+  text-align: center;
+  color: #ff005e;
+}
+
+.footer-list_item:hover {
+  color: #70224a;
+  transition: 2s;
+}

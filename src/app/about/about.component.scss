@@ -1,0 +1,147 @@
+figcaption {
+  font-size: 1rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
+  border-top: 2px solid #991358;
+  max-width: 15em;
+  margin: 0 auto;
+  padding: 0.8em 0;
+}
+
+i {
+  margin: 0.8em 0;
+}
+
+p,
+li {
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 0 1em;
+}
+
+.about {
+  padding: 2em 0;
+  text-align: center;
+}
+
+.profile-bio {
+  min-height: 200px;
+  max-width: 60%;
+  margin: 2.5em auto;
+  border-radius: 10px;
+  padding: 0 1em;
+}
+
+.portfolio-img {
+  border-radius: 100%;
+  margin: 2em 0;
+}
+
+.skills {
+  min-height: 200px;
+  max-width: 70%;
+  margin: 50px auto;
+  border-radius: 5px;
+  padding: 0.8em 0;
+}
+
+.skills,
+.profile-bio {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.skills:before,
+.skills:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+.skills:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+.skill-header {
+  border-bottom: 2px solid #991358;
+  min-width: 12em;
+}
+
+.skills-list {
+  padding-top: 0.5em;
+}
+
+@media (min-width: 600px) {
+  .about {
+    text-align: center;
+  }
+
+  .profile-bio {
+    max-width: 40%;
+  }
+
+  .badge-header,
+  .skill-text {
+    font-size: 1.3rem;
+  }
+
+  .badge-text {
+    margin: 0 auto;
+  }
+
+  .badge-div {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .skills {
+    width: 40%;
+  }
+}
+
+@media (min-width: 960px) {
+  .profile-bio {
+    max-width: 30%;
+  }
+
+  .badge-div {
+    max-width: 60%;
+  }
+
+  .badge-header,
+  .skill-text {
+    font-size: 1.5rem;
+  }
+
+  .skills {
+    min-height: 250px;
+  }
+
+  p,
+  li {
+    font-size: 1.2rem;
+  }
+}

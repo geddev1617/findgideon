@@ -1,0 +1,177 @@
+/* You can add global styles to this file, and also import other style files */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+nav {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea,
+figure,
+figcaption {
+  margin: 0;
+}
+
+i {
+  color: #04c2c9;
+}
+
+i:hover {
+  color: #70224a;
+  transition: 2s;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+}
+
+header {
+  padding: 0.2em 0;
+}
+
+/* global classes styling */
+
+.bttn-pri {
+  margin: 1em auto;
+  padding: 0.5em;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  max-width: 150px;
+  width: 60%;
+  height: 7vh;
+  background-color: transparent;
+  color: #fff;
+  border: 3px solid #505050;
+  cursor: pointer;
+}
+
+.bttn-pri:hover {
+  background-color: #04c2c9;
+  transition: background-color 2s;
+}
+
+.bttn-sec {
+  background: transparent;
+  color: #fff;
+  font-size: 12pt;
+  margin: 5px 0 0 0;
+  outline: 0;
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  box-sizing: inherit;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+.bttn-sec:hover {
+  background-color: #04c2c9;
+  transition: background-color 2s;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-bar {
+  margin: 12px auto;
+  width: 90px;
+  border-bottom: 4px solid #fff;
+}
+
+.bar {
+  border-bottom: 4px solid #616161;
+}
+
+.about-heading,
+.badge-header,
+.skill-text,
+.project-header {
+  text-transform: uppercase;
+}
+
+.about,
+.project,
+.form-div {
+  padding: 2em 0;
+}
+
+.t-align {
+  text-align: center;
+}
+
+$colorScheme: (
+  primary: #1b242f,
+  secondary: #252934,
+  tertiary: #022233,
+  light: #fff,
+  light-grey: #f5f5f5,
+  form: #1e242c,
+);
+
+@function color($key) {
+  @return map-get($colorScheme, $key);
+}
+
+.bg-header {
+  background-color: color(primary);
+  border-bottom: 3px solid #04c2c9;
+}
+
+.about-bg {
+  background: color(light);
+  color: #616161;
+}
+
+.profile-bg {
+  background: color(light-grey);
+  color: #616161;
+}
+
+.card-bg {
+  background-color: color(tertiary);
+  color: #0f969b;
+}
+
+.contact-bg {
+  background-color: color(secondary);
+}
+
+.form-bg {
+  background-color: color(form);
+}
+
+.footer-bg {
+  background-color: color(primary);
+  color: #fff;
+}
