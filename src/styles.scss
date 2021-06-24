@@ -40,12 +40,7 @@ figcaption {
 }
 
 i {
-  color: #04c2c9;
-}
-
-i:hover {
-  color: #70224a;
-  transition: 2s;
+  color: #ff005e;
 }
 
 img {
@@ -75,7 +70,7 @@ header {
 }
 
 .bttn-pri:hover {
-  background-color: #04c2c9;
+  background-color: #ff005e;
   transition: background-color 2s;
 }
 
@@ -94,7 +89,7 @@ header {
 }
 
 .bttn-sec:hover {
-  background-color: #04c2c9;
+  background-color: #ff005e;
   transition: background-color 2s;
 }
 
@@ -126,6 +121,15 @@ header {
   padding: 2em 0;
 }
 
+.fa-i {
+  color: #ff005e;
+}
+
+.fa-i:hover {
+  color: #fff;
+  transition: 2s;
+}
+
 .t-align {
   text-align: center;
 }
@@ -145,7 +149,8 @@ $colorScheme: (
 
 .bg-header {
   background-color: color(primary);
-  border-bottom: 3px solid #e31b6d;
+  border-bottom: 3px solid #ff005e;
+  color: #ff005e;
 }
 
 .about-bg {
@@ -160,7 +165,7 @@ $colorScheme: (
 
 .card-bg {
   background-color: color(tertiary);
-  color: #e31b6d;
+  color: #ff005e;
 }
 
 .contact-bg {
