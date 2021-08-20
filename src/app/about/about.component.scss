@@ -2,7 +2,6 @@ figcaption {
   font-size: 1rem;
   font-family: "Roboto Slab", serif;
   font-weight: 100;
-  border-top: 2px solid #fff;
   max-width: 15em;
   margin: 0 auto;
   padding: 0.8em 0;
@@ -24,29 +23,27 @@ li {
   text-align: center;
 }
 
-.profile-bio {
-  min-height: 200px;
+.about-width {
+  margin: 2em auto;
+  max-width: 55%;
+}
+
+.profile-img {
   max-width: 60%;
-  margin: 2.5em auto;
-  border-radius: 10px;
-  padding: 0 1em;
+  margin: 1.5em auto;
 }
 
 .portfolio-img {
   border-radius: 100%;
-  margin: 2em 0;
+  margin: 1em 0;
 }
 
 .skills {
   min-height: 200px;
-  max-width: 70%;
+  max-width: 80%;
   margin: 50px auto;
   border-radius: 5px;
   padding: 0.8em 0;
-}
-
-.skills,
-.profile-bio {
   position: relative;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
     0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -88,33 +85,14 @@ li {
   padding-top: 0.5em;
 }
 
-@media (min-width: 600px) {
-  .about {
-    text-align: center;
-  }
-
-  .profile-bio {
+@media (min-width: 600px) and (max-width: 959px) {
+  .profile-img {
     max-width: 40%;
   }
 
   .badge-header,
   .skill-text {
-    font-size: 1.3rem;
-  }
-
-  .badge-text {
-    margin: 0 auto;
-  }
-
-  .badge-div {
-    max-width: 85%;
-    margin: 0 auto;
-  }
-
-  .flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-size: 1.1rem;
   }
 
   .skills {
@@ -123,25 +101,23 @@ li {
 }
 
 @media (min-width: 960px) {
-  .profile-bio {
+  .profile-img {
     max-width: 30%;
-  }
-
-  .badge-div {
-    max-width: 60%;
   }
 
   .badge-header,
   .skill-text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .skills {
     min-height: 250px;
+    width: 30%;
   }
 
   p,
-  li {
-    font-size: 1.2rem;
+  li,
+  figcaption {
+    font-size: 1.1rem;
   }
 }

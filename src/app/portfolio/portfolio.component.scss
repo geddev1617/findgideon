@@ -1,11 +1,11 @@
-.view {
+.view-more {
   color: #616161;
-  border: 3px solid #ff005e;
+  text-transform: capitalize;
+  border: 1px solid #ff005e;
 }
 
-.view:hover {
-  color: #fff;
-  transition: 2s;
+.view-more:hover {
+  color: #000;
 }
 
 @media (min-width: 600px) {
