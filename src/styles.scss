@@ -100,10 +100,10 @@ $colorScheme: (
   primary: #121213,
   secondary: #1b262c,
   light: #ccd9e0,
-  light-grey: #f4f5f5,
+  light-grey: #f2f3f3,
   form: #1e242c,
   tertiary: #989a9e,
-  whyte: #ffff,
+  whyte: #f1f1f1,
 );
 
 @function color($key) {
@@ -124,7 +124,7 @@ $colorScheme: (
 
 .relevanttech-bg {
   color: #121213;
-  padding: 3em;
+  padding: 1em;
 }
 
 .primary-bg {
@@ -147,6 +147,6 @@ $colorScheme: (
 
 @media (min-width: 768px) {
   .relevanttech-bg {
-    background: color(whiter);
+    background: color(light-grey);
   }
 } ;
