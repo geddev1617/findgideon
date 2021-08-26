@@ -9,6 +9,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { GetintouchComponent } from './getintouch/getintouch.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProjectHolderComponent } from './project-holder/project-holder.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
     GetintouchComponent,
     NavbarComponent,
     FooterComponent,
+    ProjectHolderComponent,
   ],
   imports: [
     BrowserModule,

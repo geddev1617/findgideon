@@ -1,14 +1,10 @@
 .view-more {
-  color: #616161;
+  color: #121213;
   text-transform: capitalize;
-  border: 1px solid #ff005e;
+  border: 1px solid #14c8ff;
 }
 
-.view-more:hover {
-  color: #000;
-}
-
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 959px) {
 }
 
 @media (min-width: 960px) {

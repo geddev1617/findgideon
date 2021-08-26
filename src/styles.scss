@@ -31,7 +31,7 @@ a {
 }
 
 i {
-  color: #ff005e;
+  color: #14c8ff;
 }
 
 img {
@@ -51,12 +51,12 @@ header {
   text-transform: uppercase;
   background-color: transparent;
   color: #fff;
-  border: 1px solid #ff005e;
+  border: 1px solid #14c8ff;
   cursor: pointer;
 }
 
 .btn-danger:hover {
-  background-color: #ff005e;
+  background-color: #6e92a6;
   transition: background-color 2s;
 }
 
@@ -67,7 +67,7 @@ header {
 }
 
 .bar {
-  border-bottom: 4px solid #616161;
+  border-bottom: 4px solid #121213;
 }
 
 .about-heading,
@@ -84,7 +84,7 @@ header {
 }
 
 .fa-i {
-  color: #ff005e;
+  color: #14c8ff;
 }
 
 .fa-i:hover {
@@ -93,12 +93,13 @@ header {
 }
 
 $colorScheme: (
-  primary: #1b242f,
-  secondary: #252934,
-  tertiary: #20252d,
-  light: #fff,
-  light-grey: #f5f5f5,
+  primary: #121213,
+  secondary: #1b262c,
+  light: #ccd9e0,
+  light-grey: #f4f5f5,
   form: #1e242c,
+  tertiary: #989a9e,
+  whyte: #ffff,
 );
 
 @function color($key) {
@@ -107,23 +108,29 @@ $colorScheme: (
 
 .bg-header {
   background-color: color(primary);
-  border-bottom: 3px solid #ff005e;
-  color: #ff005e;
+  border-bottom: 3px solid #14c8ff;
+  color: #ffff;
 }
 
-.about-bg {
-  background: color(light);
-  color: #616161;
+.midsection-bg {
+  background: color(whyte);
+  opacity: 3;
+  color: #121213;
 }
 
-.profile-bg {
-  background: color(light-grey);
-  color: #616161;
+.relevanttech-bg {
+  color: #121213;
+  padding: 3em;
 }
 
 .primary-bg {
   background-color: color(primary);
-  color: #ffff;
+  color: #1b262c;
+}
+
+.portfolio-bg {
+  background-color: color(tertiary);
+  color: #121213;
 }
 
 .contact-bg {
@@ -133,3 +140,9 @@ $colorScheme: (
 .form-bg {
   background-color: color(secondary);
 }
+
+@media (min-width: 768px) {
+  .relevanttech-bg {
+    background: color(whiter);
+  }
+} ;

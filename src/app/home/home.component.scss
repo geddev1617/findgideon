@@ -1,5 +1,7 @@
 .hero-section {
-  background-image: url(src/assets/endless-constellation.svg);
+  background-image: url(src/assets/portfoliobg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 95vh;
 }
 
@@ -8,15 +10,15 @@
 }
 
 .name-link {
-  color: #ff005e;
+  color: #a8adb7;
 }
 
 .hero-text {
   color: #ffff;
-  font-size: 1.333rem;
+  font-size: 1.4rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .hero-text {
     font-size: 2rem;
   }

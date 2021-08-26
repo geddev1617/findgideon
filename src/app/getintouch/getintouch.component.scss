@@ -34,6 +34,10 @@ textarea {
   width: 100%;
 }
 
+.contact-padding {
+  margin: -0.1em 0;
+}
+
 .form-header {
   text-align: center;
   color: #ffff;
@@ -42,7 +46,7 @@ textarea {
 .contact-text {
   padding-top: 1.5em;
   text-align: center;
-  color: #ff005e;
+  color: #14c8ff;
 }
 
 .form-div {
@@ -51,9 +55,12 @@ textarea {
   margin: 0 auto;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .form-div {
     max-width: 50%;
     margin: 0 auto;
+  }
+  .contact-padding {
+    margin: 0em;
   }
 }

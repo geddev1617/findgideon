@@ -1,8 +1,8 @@
 figcaption {
   font-size: 1rem;
   font-family: "Roboto Slab", serif;
+  line-height: 2;
   font-weight: 100;
-  max-width: 15em;
   margin: 0 auto;
   padding: 0.8em 0;
 }
@@ -18,6 +18,12 @@ li {
   padding: 0 1em;
 }
 
+.li-padding {
+  padding: 0%;
+  line-height: 1.8;
+  list-style-type: "-";
+}
+
 .about {
   padding: 2em 0;
   text-align: center;
@@ -29,7 +35,7 @@ li {
 }
 
 .profile-img {
-  max-width: 60%;
+  max-width: 50%;
   margin: 1.5em auto;
 }
 
@@ -38,86 +44,43 @@ li {
   margin: 1em 0;
 }
 
-.skills {
-  min-height: 200px;
-  max-width: 80%;
-  margin: 50px auto;
-  border-radius: 5px;
-  padding: 0.8em 0;
-  position: relative;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}
-.skills:before,
-.skills:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-  top: 10px;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  -moz-border-radius: 100px / 10px;
-  border-radius: 100px / 10px;
-}
-.skills:after {
-  right: 10px;
-  left: auto;
-  -webkit-transform: skew(8deg) rotate(3deg);
-  -moz-transform: skew(8deg) rotate(3deg);
-  -ms-transform: skew(8deg) rotate(3deg);
-  -o-transform: skew(8deg) rotate(3deg);
-  transform: skew(8deg) rotate(3deg);
+.skill-padding {
+  padding: 1.5em;
 }
 
-.skill-header {
-  border-bottom: 2px solid #fff;
-  min-width: 12em;
+.skill-margin {
+  margin: 0.5em 0;
+  padding: 0.2em 0;
+  line-height: 2;
 }
 
-.skills-list {
-  padding-top: 0.5em;
+.relevanttech-margin + .relevanttech-margin {
+  margin-top: 1.5em;
 }
 
-@media (min-width: 600px) and (max-width: 959px) {
-  .profile-img {
-    max-width: 40%;
-  }
-
-  .badge-header,
-  .skill-text {
-    font-size: 1.1rem;
-  }
-
-  .skills {
-    width: 40%;
-  }
-}
-
-@media (min-width: 960px) {
+@media (min-width: 768px) {
   .profile-img {
     max-width: 30%;
-  }
-
-  .badge-header,
-  .skill-text {
-    font-size: 1.2rem;
-  }
-
-  .skills {
-    min-height: 250px;
-    width: 30%;
   }
 
   p,
   li,
   figcaption {
     font-size: 1.1rem;
+  }
+
+  .li-padding {
+    line-height: 2;
+  }
+
+  .skill-margin {
+    margin: 0.5em 0;
+    padding: 0.2em 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .relevanttech-margin + .relevanttech-margin {
+    margin-top: 0em;
   }
 }

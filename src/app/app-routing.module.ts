@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { GetintouchComponent } from './getintouch/getintouch.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProjectHolderComponent } from './project-holder/project-holder.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'getintouch', component: GetintouchComponent },
   { path: 'footer', component: FooterComponent },
+  { path: 'project-holder', component: ProjectHolderComponent },
   
 
   

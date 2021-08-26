@@ -1,21 +1,19 @@
 #navhome,
 #navabout,
 #navcon {
-  //   color: #e31b6d;
-  color: #ff005e;
+  color: #fff;
   font-size: 1rem;
 }
 
 #navhome:hover,
 #navabout:hover,
-#navport:hover,
 #navcon:hover,
 .navbar-brand:hover {
-  color: #fff;
+  color: #6e92a6;
   transition: 1s;
 }
 
 .navbar-brand {
   font-weight: 600;
-  color: #ff005e;
+  color: #ffff;
 }

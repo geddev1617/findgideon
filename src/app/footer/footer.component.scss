@@ -10,10 +10,12 @@
 }
 
 .footer-list_item {
-  color: #ff005e;
+  color: #14c8ff;
+  text-align: center;
 }
 
-.footer-list_item:hover {
-  color: #fff;
-  transition: 2s;
+@media (min-width: 768px) {
+  .footer-list_item {
+    text-align: unset;
+  }
 }
